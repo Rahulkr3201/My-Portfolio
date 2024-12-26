@@ -42,9 +42,7 @@ function Techstack() {
     //{ name: "mysql", img: mysql },
     //{ name: "appwrite", img: appwrite },
   ];
-
   return (
-
     <div className="mt-3">
     <div className="mt-3 mb-3 ">
       <Heading>Tech Stack</Heading>
