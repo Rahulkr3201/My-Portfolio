@@ -25,7 +25,7 @@ function Techstack() {
     threshold: 0.1,
   });
   const skills = [
-    { name: "nextjs", img: nextjs },
+    
     { name: "react", img: react },
     //{ name: "java", img: java },
     { name: "node", img: node },
@@ -37,6 +37,7 @@ function Techstack() {
     //{ name: "typescript", img: typescript },
     { name: "mongoDb", img: mongoDb },
     { name: "tailwind", img: tailwind },
+    { name: "nextjs", img: nextjs },
     { name: "git", img: git },
     //{ name: "aws", img: aws },
     //{ name: "mysql", img: mysql },
@@ -44,7 +45,7 @@ function Techstack() {
   ];
 
   return (
-    <div className="mt-3 mb-3 border-b-2 border-white">
+    <div className="mt-3 mb-3 border-t-2 border-neutral-700 dark:border-gray-200 dark:text-white">
       <Heading>Tech Stack</Heading>
       <div className="m-4 ml-0 ">
         <ul

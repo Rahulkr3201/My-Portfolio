@@ -19,7 +19,7 @@ const Skill = () => {
   ];
 
   return (
-    <div className="mb-3 border-b-2 border-white">
+    <div className="mb-3 border-t-2 border-neutral-700 dark:border-gray-200 dark:text-white">
       <div>
         {" "}
         <Heading>Skills</Heading>
