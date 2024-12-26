@@ -39,7 +39,7 @@ function Hero() {
             </motion.p>
             <p className="text-md">📍Bengaluru</p>
             <a
-              href="https://drive.google.com/drive/folders/1wWyH_jlrYR9FS80zHLLC2B6EywaYiYVf?usp=sharing"
+              href="https://drive.google.com/file/d/1xz9oq8cIsj8LI9ueKD9fPh6MkBrL_cDA/view?usp=drive_link"
               rel="noopener noreferrer"
               target="_blank"
               className="btn btn-primary"
