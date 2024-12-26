@@ -80,7 +80,7 @@ function Socials() {
             </motion.li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
