@@ -25,7 +25,7 @@ function Techstack() {
     threshold: 0.1,
   });
   const skills = [
-    { name: "nextjs", img: nextjs },
+    
     { name: "react", img: react },
     //{ name: "java", img: java },
     { name: "node", img: node },
@@ -37,6 +37,7 @@ function Techstack() {
     //{ name: "typescript", img: typescript },
     { name: "mongoDb", img: mongoDb },
     { name: "tailwind", img: tailwind },
+    { name: "nextjs", img: nextjs },
     { name: "git", img: git },
     //{ name: "aws", img: aws },
     //{ name: "mysql", img: mysql },
