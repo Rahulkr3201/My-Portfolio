@@ -24,11 +24,11 @@ const Skill = () => {
         {" "}
         <Heading>Skills</Heading>
       </div>
-      <div className="flex flex-wrap gap-y-4  py-9 w-full">
+      <div className="flex flex-wrap gap-y-4 gap-x-1 py-9 w-full">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-green-700 text-white py-2 px-3 mx-3 rounded-lg shadow-md hover:bg-green-800 transition duration-300"
+            className="bg-green-700 text-white py-2 px-3 mx-1 rounded-lg shadow-md hover:bg-green-800 transition duration-300"
           >
             {skill}
           </div>
