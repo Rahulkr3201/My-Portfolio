@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <>
-      <div className="mt-12 mb-3 border-b-2 border-white">
+      <div className="mt-12 mb-3 ">
         <Logo />
 
         <div className="">
