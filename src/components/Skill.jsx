@@ -24,7 +24,7 @@ const Skill = () => {
         {" "}
         <Heading>Skills</Heading>
       </div>
-      <div className="flex flex-wrap gap-y-4  py-9 w-full">
+      <div className="flex flex-wrap gap-y-4 gap-x-1 py-9 w-full">
         {skills.map((skill, index) => (
           <div
             key={index}
