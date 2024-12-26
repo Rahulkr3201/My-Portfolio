@@ -3,7 +3,7 @@ import Heading from "./Heading";
 function AboutMe() {
   return (
     <>
-      <div className="mt-2 mb-3 border-b-2 border-white">
+      <div className="mt-2 mb-3 border-t-2 border-neutral-700 dark:border-gray-200 dark:text-white">
         <Heading textsize="text-l ">About Me</Heading>
         <p className="mt-2 mb-4 lg:mr-20 md:mr-0 mr-0 text-gray-800 dark:text-gray-200">
           I'm a third-year{" "}
