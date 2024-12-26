@@ -52,8 +52,8 @@ function Socials() {
   ];
 
   return (
-    <motion.div className="mt-2 ">
-    <motion.div className="mt-2 mb-3">
+    <div className="mt-2 ">
+    <div className="mt-2 mb-3">
       <Heading>Get in Touch</Heading>
       <div className="m-4 ml-0">
         <ul
@@ -80,8 +80,8 @@ function Socials() {
             </motion.li>
           ))}
         </ul>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }
 
