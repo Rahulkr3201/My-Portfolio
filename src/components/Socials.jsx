@@ -56,7 +56,7 @@ function Socials() {
   ];
 
   return (
-    <motion.div className="mt-2 mb-3 border-t-2 border-neutral-700 dark:border-gray-200 dark:text-white">
+    <motion.div className="mt-2 mb-3">
       <Heading>Get in Touch</Heading>
       <div className="m-4 ml-0">
         <ul
