@@ -18,39 +18,32 @@ import nextjs from "../assets/nextjs.png";
 import git from "../assets/git.png";
 import aws from "../assets/aws.png";
 import mysql from "../assets/mysql.png";
+import Github from "../assets/github.png";
 
 function Techstack() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
   const skills = [
-    { name: "nextjs", img: nextjs },
     { name: "react", img: react },
-    //{ name: "java", img: java },
     { name: "node", img: node },
     { name: "express", img: express },
     { name: "redux", img: redux },
     { name: "html", img: html },
     { name: "css", img: css },
-    //{ name: "javascript", img: javascript },
-    //{ name: "typescript", img: typescript },
     { name: "mongoDb", img: mongoDb },
     { name: "tailwind", img: tailwind },
+    { name: "nextjs", img: nextjs },
     { name: "git", img: git },
-    //{ name: "aws", img: aws },
-    //{ name: "mysql", img: mysql },
-    //{ name: "appwrite", img: appwrite },
+    { name: "Github", img: Github },
   ];
 
   return (
-<<<<<<< HEAD
-    <div className="mt-3">
-=======
-    <div className="mt-3 mb-3 ">
->>>>>>> aa61c30951640267b7d7ec6377d4ddad1bc1a766
+    <div className="mt-3 mb-3">
       <Heading>Tech Stack</Heading>
-      <div className="m-4 ml-0 ">
+      <div className="m-4 ml-0">
         <ul
           ref={ref}
           className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4"
@@ -58,16 +51,20 @@ function Techstack() {
           {skills.map((item) => (
             <motion.li
               key={item.name}
-              initial={{ opacity: 0, y: 20 }} // Initial state for animation
-              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }} // Animation when in view
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
               transition={{ duration: 0.6, type: "spring", stiffness: 300 }}
               whileHover={{ scale: 1.15, rotate: 5 }}
               whileTap={{ scale: 1.1 }}
               className="flex items-center justify-center p-1 md:p-2"
             >
               <div>
-                <img src={item.img} alt={item.name} className="w-10 md:w-12" />
-                <p className="text-white">{item.name}</p>
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-10 md:w-12 rounded-lg"
+                />
+                <p className="text-black dark:text-white">{item.name}</p>
               </div>
             </motion.li>
           ))}

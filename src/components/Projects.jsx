@@ -4,11 +4,11 @@ import Card from "./Card";
 
 function Projects() {
   return (
-    <div className="mt-2">
+    <div className="mt-7">
       <Heading>Projects</Heading>
       <Card
         projectName="DevTinder"
-        techStack="Node.js + Express + MongoDB + Vite + React.js + Tailwind Css + Vercel"
+        techStack="Node.js + Express + MongoDB + Vite + React.js + Tailwind Css + Framer motion + Vercel"
         description={
           <>
             <ul>
@@ -49,6 +49,30 @@ function Projects() {
         }
         codeLink="https://github.com/Rahulkr3201/MovieFlix-app"
         liveSiteLink="https://movieflix-c6d1b.web.app/"
+      />
+      <Card
+        projectName="  Real Estate Tokenization Platform(Collaborative Project)"
+        techStack="Vite + React.js + Tailwind Css + Mongodb + Solitude + Node.js + React redux + Framer motion"
+        description={
+          <>
+            <ul>
+              <li className="flex items-center ">
+                Developed an innovative solution to revolutionize the real
+                estate industry by enabling Web3 tokenization of real-world
+                assets. Key achievements include:
+                <br /> – Dynamic Smart Contracts: Enabled flexible and secure
+                real estate transactions.
+                <br /> – Chatbot Integration: Enhanced user experience with
+                real-time assistance.
+                <br /> – AI/ML Models: Predicted property prices to provide
+                market insights. <br />– MetaMask Integration: Ensured secure,
+                transparent blockchain transactions.
+              </li>
+            </ul>
+          </>
+        }
+        codeLink="https://github.com/Rahulkr3201/RWA.git"
+        // liveSiteLink="https://movieflix-c6d1b.web.app/"
       />
     </div>
   );

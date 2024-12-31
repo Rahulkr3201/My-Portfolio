@@ -7,7 +7,7 @@ import Socials from "./components/Socials";
 import Techstack from "./components/Techstack";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import Experience from "./components/Experience";
+import Achivement from "./components/Achivement";
 import Skill from "./components/Skill";
 function App() {
   const mode = useSelector((state) => state.themeMode.mode);
@@ -24,7 +24,7 @@ function App() {
       <Socials />
       <Skill />
       <Techstack />
-      {/* <Experience /> */}
+      {<Achivement />}
       <Projects />
       <Footer />
     </>
