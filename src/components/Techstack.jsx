@@ -41,7 +41,11 @@ function Techstack() {
   ];
 
   return (
+<<<<<<< HEAD
     <div className="mt-3 mb-3">
+=======
+    <div className="mt-3 mb-3 ">
+>>>>>>> b123eddcb553d506188939fb7bd4fa8b89165b65
       <Heading>Tech Stack</Heading>
       <div className="m-4 ml-0">
         <ul
