@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="mt-7">
       <Heading>Projects</Heading>
-         <Card
+      <Card
         projectName="  Real Estate Tokenization Platform(Collaborative Project)"
         techStack="Vite + React.js + Tailwind Css + Mongodb + Solitude + Node.js + React redux + Framer motion"
         description={
@@ -28,6 +28,29 @@ function Projects() {
           </>
         }
         codeLink="https://github.com/Rahulkr3201/RWA.git"
+        // liveSiteLink="https://movieflix-c6d1b.web.app/"
+      />
+      <Card
+        projectName="  GreenSphere(Collaborative Project)"
+        techStack="Vite + React.js + Tailwind Css + Mongodb + Node.js + React redux + Framer motion + python"
+        description={
+          <>
+            <ul>
+              <li className="flex items-center ">
+                Developed an AI-powered platform to optimize green finance
+                investments using NLP, logistic regression, and optimization
+                models like Linear and Mixed-Integer Programming:
+                <br /> – Developed a responsive React-based dashboard for
+                scenario analysis and results visualization..
+                <br /> – Chatbot Integration: Enhanced user experience with
+                real-time assistance.
+                <br /> – Enabled effective allocation of resources to enhance
+                ROI and ESG impact
+              </li>
+            </ul>
+          </>
+        }
+        codeLink="https://github.com/Rahulkr3201/industriAi"
         // liveSiteLink="https://movieflix-c6d1b.web.app/"
       />
       <Card
@@ -74,7 +97,6 @@ function Projects() {
         codeLink="https://github.com/Rahulkr3201/MovieFlix-app"
         liveSiteLink="https://movieflix-c6d1b.web.app/"
       />
-   
     </div>
   );
 }
