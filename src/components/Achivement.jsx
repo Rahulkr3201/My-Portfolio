@@ -15,7 +15,6 @@ const Achivement = () => {
           transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
         >
           <Card
-            projectName="Real Estate Tokenization"
             description={
               <>
                 <ul>
@@ -32,7 +31,24 @@ const Achivement = () => {
                 </ul>
               </>
             }
-            codeLink="https://github.com/Rahulkr3201/RWA.git"
+            // codeLink="https://github.com/Rahulkr3201/RWA.git"
+            // liveSiteLink="https://platform.mpowerngo.com"
+          />
+          <Card
+            description={
+              <>
+                <ul>
+                  <li className="flex items-center space-x-2">
+                    <span className="">
+                      IIT Madras Hackathon Acknowledged by judges for
+                      exceptional teamwork and problem-solving skills in
+                      developing an ESG AI-based train model.
+                    </span>
+                  </li>
+                </ul>
+              </>
+            }
+            // codeLink="https://github.com/Rahulkr3201/RWA.git"
             // liveSiteLink="https://platform.mpowerngo.com"
           />
         </motion.div>
