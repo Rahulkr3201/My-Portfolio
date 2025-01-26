@@ -45,7 +45,7 @@ function Hero() {
         <p className="text-md">📍 Bengaluru</p>
 
         <a
-          href="https://drive.google.com/file/d/1wDRSBKw1BAzgRNVPNwoB1Qg2DBmIILOV/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1GxaY8n0jX9wHTrH37GRMw9E2O8etZZWL/view"
           rel="noopener noreferrer"
           target="_blank"
           className="btn btn-primary"
