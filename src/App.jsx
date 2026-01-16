@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import anshuImage from "../rahul.jpg";
 import homecart from "../Homecart.png";
 import devtinder from "../Devtinder.png";
+import rateLimiter from "../rateLimiter.png";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -132,6 +133,10 @@ function App() {
             <a href="#about" className="nav-link">
               About
             </a>
+            <a href="#work" className="nav-link">
+              Work
+            </a>
+
             <a href="#skills" className="nav-link">
               Skills
             </a>
@@ -161,6 +166,14 @@ function App() {
           >
             About
           </a>
+          <a
+            href="#work"
+            className="mobile-nav-link"
+            onClick={toggleMobileMenu}
+          >
+            Work
+          </a>
+
           <a
             href="#skills"
             className="mobile-nav-link"
@@ -338,6 +351,59 @@ function App() {
           </div>
         </section>
 
+        {/* Work Experience Section */}
+        <section id="work" className="work section">
+          <div className="container">
+            <h2 className="section__title">Work Experience</h2>
+            <div className="section-divider"></div>
+
+            <div className="work__grid">
+              <div className="work__card card">
+                <div className="work__header">
+                  <h3 className="work__role">Frontend Developer Intern</h3>
+                  <span className="work__duration">Aug 2025 – Sep 2025</span>
+                </div>
+
+                <p className="work__company">Techlobo Solutions · Remote</p>
+
+                <p className="work__description">
+                  Built scalable, SEO-optimized frontend applications using
+                  modern React and Next.js architecture.
+                </p>
+
+                <ul className="work__list">
+                  <li>
+                    Improved SEO and accessibility using{" "}
+                    <strong>Next.js</strong> with server-side rendering.
+                  </li>
+                  <li>
+                    Integrated <strong>REST APIs</strong> and managed global
+                    state using
+                    <strong> Redux Toolkit</strong>.
+                  </li>
+                  <li>
+                    Developed responsive UI using <strong>Tailwind CSS</strong>{" "}
+                    and animations with <strong>Framer Motion</strong>.
+                  </li>
+                  <li>
+                    Collaborated using <strong>Git & GitHub</strong> following
+                    clean version control workflows.
+                  </li>
+                </ul>
+
+                <div className="work__tags">
+                  <span>React</span>
+                  <span>Next.js</span>
+                  <span>Redux Toolkit</span>
+                  <span>Tailwind CSS</span>
+                  <span>Framer Motion</span>
+                  <span>REST APIs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Skills Section */}
         <section id="skills" className="skills section">
           <div className="container">
@@ -367,7 +433,11 @@ function App() {
                   <li>React.js </li>
                   <li>Redux </li>
                   <li>JavaScript (ES6+)</li>
-                  <li>HTML5 & CSS3/SCSS</li>
+
+                  <li>Next.js</li>
+                  <li>Server Side Rendering </li>
+                  <li>Search Engine Optimization </li>
+
                   <li>Tailwind CSS</li>
                   <li>framer motion</li>
                 </ul>
@@ -380,9 +450,11 @@ function App() {
                 <ul className="skill__list">
                   <li>Node.js</li>
                   <li>Express </li>
+                  <li>Web Sockets</li>
                   <li>Google firebase</li>
                   <li>RESTful APIs</li>
-                  <li>Microservice Concepts</li>
+                  <li>Jason Web Token</li>
+                  <li>Microservice Co</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -407,19 +479,26 @@ function App() {
                   <li>JavaScript</li>
                   <li>C</li>
                   <li>Python</li>
+                  <li>HTML5</li>
+                  <li>Css</li>
                 </ul>
               </div>
               <div className="skill__card card">
                 <div className="skill__icon">
                   <FontAwesomeIcon icon="tools" />
                 </div>
-                <h3 className="skill__title">Tools & DevOps</h3>
+                <h3 className="skill__title">Tools & technologies</h3>
                 <ul className="skill__list">
-                  <li>Git & GitHub</li>
+                  <li>Web3</li>
+                  <li>blockchain</li>
+                  <li>Git</li>
+                  <li>Github</li>
+                  <li>Visual Studio Code</li>
+                  <li>intelliJ IDEA</li>
+                  <li>Postman</li>
                   <li>Stripe</li>
                   <li>Vercel</li>
                   <li>Google Firebase</li>
-                  <li>Testing (Unit/Integration)</li>
                 </ul>
               </div>
             </div>
@@ -606,6 +685,55 @@ function App() {
                     <span>React</span>
                     <span>Redux</span>
                     <span>Python</span>
+                  </div>
+                </div>
+              </article>
+
+              {/* API Rate Limiter */}
+              <article className="project__card card">
+                <div className="project__image-container">
+                  <img
+                    src={rateLimiter} // add your rate limiter image/illustration
+                    alt="API Rate Limiter"
+                    loading="lazy"
+                    className="project__image"
+                  />
+                  <div className="project__overlay">
+                    <a
+                      href="https://github.com/Rahulkr3201/API-rate-limiter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project__icon-link"
+                      aria-label="API Rate Limiter GitHub"
+                    >
+                      <FontAwesomeIcon icon={["fab", "github"]} />
+                    </a>
+                    <a
+                      href="https://github.com/Rahulkr3201/API-rate-limiter#readme"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project__icon-link"
+                      aria-label="API Rate Limiter Documentation"
+                    >
+                      <FontAwesomeIcon icon="external-link-alt" />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="project__content">
+                  <h3 className="project__title">API Rate Limiter</h3>
+                  <p className="project__description">
+                    A high-performance backend system implementing the Token
+                    Bucket algorithm to enforce global and per-user API rate
+                    limits with concurrency safety using async locks.
+                  </p>
+                  <div className="project__tags">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Token Bucket</span>
+                    <span>AsyncIO</span>
+                    <span>Concurrency Control</span>
+                    <span>REST APIs</span>
                   </div>
                 </div>
               </article>

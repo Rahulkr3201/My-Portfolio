@@ -6,7 +6,7 @@
   /*========== Colors (Dark Theme - Default) ==========*/
   --hue-color: 200; /* Refined Blue/Teal Hue */
 
-  --bg-color: hsl(225, 15%, 10%);         /* Deeper, slightly bluish dark background */
+  --bg-color: hsl(26, 14%, 10%);         /* Deeper, slightly bluish dark background */
   --bg-color-alt: hsl(225, 15%, 14%);    /* Card background */
   --text-color: hsl(var(--hue-color), 20%, 88%); /* Brighter text */
   --text-color-muted: hsl(var(--hue-color), 20%, 70%); /* Muted text */
@@ -194,6 +194,43 @@ button:focus-visible, a:focus-visible {
 
 /*=============== DATE DISPLAY ===============*/
 .current-date-display {
+  position: fixed;
+  top: var(--sp-1-5);
+  left: calc(var(--sp-1-5) + 40px);
+  z-index: var(--z-fixed);
+
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color-muted);
+
+  background-color: hsla(
+    var(--bg-hue, 225),
+    var(--bg-sat, 15%),
+    var(--bg-light, 10%),
+    0.7
+  );
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  padding: var(--sp-0-5) var(--sp-1);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+
+  transition: var(--transition-color);
+}
+
+/* 📱 Mobile: stick to absolute top, keep margin */
+@media (max-width: 768px) {
+  .current-date-display {
+    top: var(--sp-1);      /* margin from top */
+    left: auto;
+    right: var(--sp-1-5); /* right margin */
+  }
+}
+
+
+/* .current-date-display {
     position: fixed;
     top: var(--sp-1-5);
     left: calc(var(--sp-1-5) + 40px);
@@ -208,7 +245,7 @@ button:focus-visible, a:focus-visible {
     border-radius: var(--border-radius-md);
     border: 1px solid var(--border-color);
     transition: var(--transition-color);
-}
+} */
 body.light-theme .current-date-display {
     background-color: hsla(var(--hue-color), 30%, 98%, 0.7);
 }
@@ -304,7 +341,7 @@ body.light-theme .main-header.scrolled {
 }
 
 /*=============== HERO SECTION ===============*/
-.hero { padding: var(--sp-8) 0 var(--sp-5); margin-top: 60px; text-align: center; position: relative; overflow: hidden; }
+.hero { padding: var(--sp-8) 0 var(--sp-5);  text-align: center; position: relative; overflow: hidden; }
 .hero-background-shapes {
     position: absolute; inset: 0; z-index: var(--z-back);
     background: radial-gradient(circle at 30% 30%, hsla(var(--hue-color), 70%, 50%, 0.1), transparent 50%),
@@ -583,4 +620,75 @@ body.light-theme .project__tags span { background-color: hsl(var(--hue-color), 3
   .achievement-card {
     padding: var(--sp-3);
   }
+}
+/*=============== WORK EXPERIENCE SECTION ===============*/
+.work__grid {
+  max-width: 850px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--sp-2-5);
+}
+
+.work__card {
+  text-align: left;
+}
+
+.work__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-1);
+  flex-wrap: wrap;
+}
+
+.work__role {
+  font-size: 1.25rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.work__duration {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-muted);
+}
+
+.work__company {
+  margin-top: var(--sp-0-25);
+  font-weight: var(--font-medium);
+  color: var(--accent-color);
+}
+
+.work__description {
+  margin: var(--sp-1-5) 0;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.work__list {
+  padding-left: var(--sp-1-5);
+  margin-bottom: var(--sp-1-5);
+}
+
+.work__list li {
+  list-style: disc;
+  margin-bottom: var(--sp-0-5);
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.work__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-0-5);
+}
+
+.work__tags span {
+  font-size: 0.7rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
