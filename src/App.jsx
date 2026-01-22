@@ -40,7 +40,7 @@ function App() {
       if (scrollUpRef.current) {
         scrollUpRef.current.classList.toggle(
           "show-scroll",
-          window.scrollY >= 600
+          window.scrollY >= 600,
         );
       }
 
@@ -83,7 +83,7 @@ function App() {
       {
         threshold: 0.1,
         rootMargin: "0px 0px -40px 0px",
-      }
+      },
     );
 
     revealElements.forEach((el) => observer.observe(el));
@@ -126,7 +126,7 @@ function App() {
             ref={(el) => {
               if (el)
                 navLinksRef.current = Array.from(
-                  el.querySelectorAll(".nav-link")
+                  el.querySelectorAll(".nav-link"),
                 );
             }}
           >
@@ -218,7 +218,7 @@ function App() {
         ref={(el) => {
           if (el)
             sectionsRef.current = Array.from(
-              el.querySelectorAll(".section[id]")
+              el.querySelectorAll(".section[id]"),
             );
         }}
       >
@@ -295,7 +295,7 @@ function App() {
               </div>
               <div className="hero__cta">
                 <a
-                  href="https://drive.google.com/file/d/1GGAcnahWQZct-MJMBDKnHWpS8MTk4bcb/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/145v3nyBxuT4sZ5dPkt9ZKT55Y-ITqmPX/view?usp=drive_link"
                   target="_blank"
                   className="button button--primary"
                 >
